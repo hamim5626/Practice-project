@@ -10,7 +10,7 @@ const authApi = baseApi.injectEndpoints({
                 method: 'POST',
                 body: userInfo,
             }),
-            async onQueryStarted(arg, { dispatch, queryFulfilled }) {
+            async onQueryStarted(arg, { queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled;
                     if (data?.success) {
@@ -22,7 +22,7 @@ const authApi = baseApi.injectEndpoints({
                         }
                     }
                 } catch (error) {
-                    // Handle error
+                   console.log(error);
                 }
             },
         }),

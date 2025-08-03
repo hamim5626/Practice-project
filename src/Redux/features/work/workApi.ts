@@ -3,7 +3,7 @@ import { baseApi } from "../../api/baseApi";
 const workApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getAllWork: builder.query({
-      query: (_) => ({
+      query: () => ({
         url: "/work",
         method: "GET",
       }),

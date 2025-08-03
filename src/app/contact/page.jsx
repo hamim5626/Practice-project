@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Mail, Building, Phone, Upload } from "lucide-react";
+import { MapPin, Mail, Building, Upload } from "lucide-react";
 import HeroBgPhoto from "../../components/Images/contact-hero.jpg";
+import Image from "next/image";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +14,7 @@ const ContactPage = () => {
     subject: "",
     message: "",
   });
-  const [recaptchaChecked, setRecaptchaChecked] = useState(false);
+  const [recaptchaChecked] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -284,10 +285,15 @@ const ContactPage = () => {
                     I&apos;m not a robot
                   </label>
                 </div>
+           
+
+
                 <div className="flex flex-col items-center ml-4 text-xs text-gray-500">
-                  <img
+                  <Image
                     src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
                     alt="reCAPTCHA logo"
+                    width={32}
+                    height={32}
                     className="w-8 h-8"
                   />
                   <div className="text-[10px] leading-none">

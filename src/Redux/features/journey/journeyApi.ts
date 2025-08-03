@@ -3,7 +3,7 @@ import { baseApi } from "../../api/baseApi";
 const journeyApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getAllJourney: builder.query({
-      query: (_) => ({
+      query: () => ({
         url: "/journey",
         method: "GET",
       }),

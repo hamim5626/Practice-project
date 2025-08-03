@@ -1,20 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-    Users,
-    Search,
-    Clock,
-    Shield,
-    TrendingUp,
-    CheckCircle,
-    Building,
-    Briefcase,
-    Target,
-    Award,
-    Phone,
-    Mail
+    CheckCircle
 } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 import HeroBgPhoto from "../../components/Images/em-2.jpg";
 import photo1 from "../../components/Images/image1.png";

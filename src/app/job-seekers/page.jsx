@@ -1,9 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import { Search, Briefcase, MapPin, Filter, Star, ChevronDown, Phone, Mail } from "lucide-react";
+import { Search, Briefcase, MapPin, ChevronDown } from "lucide-react";
 import HowItWorks from "../../components/HowItWorks";
 import HeroBgPhoto from "../../components/Images/employees.png";
-import Image from "next/image";
+
 
 const JobSeekersPage = () => {
   const recommendedJobs = [
@@ -89,28 +89,7 @@ const JobSeekersPage = () => {
     },
   ];
 
-  const howItWorksSteps = [
-    {
-      icon: "📄",
-      title: "Register Online",
-      description: "Create an account and fill out your profile to get started."
-    },
-    {
-      icon: "🔍",
-      title: "Search and Apply",
-      description: "Browse our extensive job listings and apply for positions that match your qualifications."
-    },
-    {
-      icon: "🤝",
-      title: "Get Matched",
-      description: "Our team reviews your application and connects you with potential employers."
-    },
-    {
-      icon: "💼",
-      title: "Start Working",
-      description: "Begin your new job with confidence, knowing you've found the right fit."
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-gray-50">

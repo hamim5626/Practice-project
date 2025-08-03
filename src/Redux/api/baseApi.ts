@@ -13,7 +13,7 @@ import { logout } from "../features/auth/authSlice";
 const baseQuery = fetchBaseQuery({
   baseUrl: process.env.NEXT_PUBLIC_BASE_API || "https://hamim-portfolio-backend.vercel.app/api",
   credentials: "include",
-  prepareHeaders: (headers, { getState }) => {
+  prepareHeaders: (headers) => {
     // Get token from localStorage for client-side requests
     let token = null;
     if (typeof window !== 'undefined') {
