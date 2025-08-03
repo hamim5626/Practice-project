@@ -1,12 +1,5 @@
-import {
-  useGetAllJourneyQuery,
-  useGetSingleJourneyByIdQuery,
-  useCreateExperienceMutation,
-  useCreateEducationMutation,
-  useCreateSkillMutation,
-  useUpdateJourneyMutation,
-  useDeleteJourneyMutation,
-} from "../Redux/features/journey/journeyApi";
+import { useCreateEducationMutation, useCreateExperienceMutation, useCreateSkillMutation, useDeleteJourneyMutation, useGetAllJourneyQuery, useGetSingleJourneyByIdQuery, useUpdateJourneyMutation } from "../Redux/features/journey/journeyApi";
+
 
 // Hook for getting all journey items
 export const useGetAllJourney = () => {
