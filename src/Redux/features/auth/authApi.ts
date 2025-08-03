@@ -4,6 +4,7 @@ import { baseApi } from "../../api/baseApi";
 const authApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         login: builder.mutation({
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             query: (userInfo: any) => ({
                 url: '/auth/login',
                 method: 'POST',
@@ -27,6 +28,7 @@ const authApi = baseApi.injectEndpoints({
         }),
         // register
         register: builder.mutation({
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             query: (userInfo: any) => ({
                 url: '/users/create-user',
                 method: 'POST',
@@ -38,6 +40,7 @@ const authApi = baseApi.injectEndpoints({
                 url: `/users/${id}`,
                 method: 'GET',
             }),
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             transformResponse: (response: any) => response.data,
         }),
        

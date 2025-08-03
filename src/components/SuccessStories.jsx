@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 const SuccessStories = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -64,7 +65,7 @@ const SuccessStories = () => {
               <div className={`text-8xl absolute top-2 right-4 font-serif ${
                 index === activeIndex ? "text-white" : "text-gray-300"
               }`}>
-                "
+                &ldquo;
               </div>
 
               {/* Testimonial Text */}
@@ -73,9 +74,11 @@ const SuccessStories = () => {
               {/* Author Info */}
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
+                    width={48}
+                    height={48}
                     className="w-full h-full object-cover"
                   />
                 </div>

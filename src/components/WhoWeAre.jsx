@@ -21,7 +21,7 @@ const WhoWeAre = () => {
             Who We Are
           </h2>
           <p className="text-gray-600 text-base leading-relaxed mb-6">
-            We've been a trusted partner for companies and job seekers alike. Our mission is to match great companies with hardworking individuals, ensuring the right fit every time. Whether you're looking for temporary, temp-to-hire, or direct hire positions, we have the resources and expertise to help you succeed.
+            We&apos;ve been a trusted partner for companies and job seekers alike. Our mission is to match great companies with hardworking individuals, ensuring the right fit every time. Whether you&apos;re looking for temporary, temp-to-hire, or direct hire positions, we have the resources and expertise to help you succeed.
           </p>
           
           {/* Bottom Left Image */}

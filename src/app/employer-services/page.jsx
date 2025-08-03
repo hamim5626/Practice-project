@@ -47,7 +47,7 @@ const EmployerServices = () => {
                                 Employer Staffing Solutions Tailored for Success
                             </h1>
                             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-                                We help businesses like yours connect with the right talent. Let's find the ideal workforce for your success.
+                                We help businesses like yours connect with the right talent. Let&apos;s find the ideal workforce for your success.
                             </p>
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
@@ -194,7 +194,7 @@ const EmployerServices = () => {
                             Tell Us About Your Staffing Needs
                         </h2>
                         <p className="text-lg text-gray-600 mb-8">
-                            Ready to find the perfect staffing solution for your business? Fill out our form and let's discuss how we can tailor our services to meet your specific requirements.
+                            Ready to find the perfect staffing solution for your business? Fill out our form and let&apos;s discuss how we can tailor our services to meet your specific requirements.
                         </p>
                         <motion.button
                             whileHover={{ scale: 1.05 }}

@@ -28,16 +28,19 @@ const baseQuery = fetchBaseQuery({
 });
 
 // token expired hola new refresh token generate code
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const baseQueryWithRefreshToken: BaseQueryFn<
   FetchArgs,
   BaseQueryApi,
   DefinitionType
-> = async (args, api, extraOptions): Promise<any> => {
+> = async (args, api, extraOptions): Promise<any> => { // eslint-disable-line @typescript-eslint/no-explicit-any
   let result = await baseQuery(args, api, extraOptions);
   if (result?.error?.status === 404) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     toast.error((result?.error?.data as any)?.message);
   }
   if (result?.error?.status === 403) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     toast.error((result?.error?.data as any)?.message);
   }
   if (result?.error?.status === 401) {

@@ -1,17 +1,8 @@
 "use client";
-import { motion } from "framer-motion";
-import { useState } from "react";
 import Image from "next/image";
 import HeroPhoto from "./Images/Rectangle 9.png";
 
 const StaffingHero = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const stats = [
-    { number: "300+", label: "Job recently added" },
-    { number: "500+", label: "Participate" },
-    { number: "89%", label: "Satisfaction rate" },
-  ];
 
   return (
     <section className="w-full bg-gradient-to-r from-white via-[#f7f9ff] to-white py-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8">

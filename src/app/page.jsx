@@ -8,7 +8,6 @@ import JobCategories from "../components/JobCategories";
 import HowItWorks from "../components/HowItWorks";
 import SuccessStories from "../components/SuccessStories";
 import EmployerSection from "../components/EmployerSection";
-import StaffingFooter from "../components/StaffingFooter";
 
 const Home = () => {
   // implement locomotive scroll

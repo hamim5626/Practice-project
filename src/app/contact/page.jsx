@@ -70,7 +70,7 @@ const ContactPage = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-xl max-w-2xl mx-auto leading-relaxed"
               >
-                Whether you have questions, need assistance, or just want to learn more about what we do, don't hesitate to reach out.
+                Whether you have questions, need assistance, or just want to learn more about what we do, don&apos;t hesitate to reach out.
               </motion.p>
             </div>
           </div>
@@ -281,7 +281,7 @@ const ContactPage = () => {
                 <div className="flex items-center space-x-2">
                   <input type="checkbox" id="robot-check" className="w-5 h-5" />
                   <label htmlFor="robot-check" className="text-sm font-medium">
-                    I'm not a robot
+                    I&apos;m not a robot
                   </label>
                 </div>
                 <div className="flex flex-col items-center ml-4 text-xs text-gray-500">

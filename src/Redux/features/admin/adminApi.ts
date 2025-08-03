@@ -2,6 +2,7 @@ import { baseApi } from "../../api/baseApi";
 
 
 const adminApi = baseApi.injectEndpoints({
+   // eslint-disable-next-line @typescript-eslint/no-explicit-any
    endpoints: (builder: any) => ({
       getAllUsers: builder.query({
          query: () => '/users/all-user',
@@ -14,6 +15,7 @@ const adminApi = baseApi.injectEndpoints({
             method: 'GET',
          }),
          providesTags: ['admins'],
+         // eslint-disable-next-line @typescript-eslint/no-explicit-any
          transformResponse: (response: any) => response?.data,
       }),
       changeStatus: builder.mutation({
@@ -28,6 +30,7 @@ const adminApi = baseApi.injectEndpoints({
       }),
       //create admin
       createAdmin: builder.mutation({
+         // eslint-disable-next-line @typescript-eslint/no-explicit-any
          query: (data: any) => ({
             url: '/users/create-user',
             method: 'POST',

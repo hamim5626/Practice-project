@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 interface AuthState {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     user: any
     token: string | null
 }

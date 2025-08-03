@@ -17,6 +17,7 @@ const blogApi = baseApi.injectEndpoints({
       providesTags: ["blogs"],
     }),
     createBlog: builder.mutation({
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       query: (blogData: any) => ({
         url: "/blog",
         method: "POST",
@@ -25,6 +26,7 @@ const blogApi = baseApi.injectEndpoints({
       invalidatesTags: ["blogs"],
     }),
     updateBlog: builder.mutation({
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       query: ({ id, blogData }: { id: string; blogData: any }) => ({
         url: `/blog/${id}`,
         method: "PUT",

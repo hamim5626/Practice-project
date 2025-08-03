@@ -153,7 +153,7 @@ const JobSeekersPage = () => {
               Find Your Next <span className="text-yellow-400">Job</span> <span className="text-red-500">Opportunity</span>
             </h1>
             <p className="text-xl mb-8 text-gray-200 max-w-3xl mx-auto">
-              Browse our extensive listings to find the perfect match for your skills and experience. Whether you're looking for temporary, temp-to-hire, or permanent positions, we've got you covered.
+              Browse our extensive listings to find the perfect match for your skills and experience. Whether you&apos;re looking for temporary, temp-to-hire, or permanent positions, we&apos;ve got you covered.
             </p>
 
             {/* Search Bar */}
