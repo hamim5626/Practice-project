@@ -40,12 +40,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Md. Hamim Howlader Asif</title>
+        <title>HY Staffing</title>
         
         
         <meta
-          name="Md. Hamim Howlader Asif"
-          content="I am a full-stack developer, and I love to build web applications."
+          name="HY Staffing"
+          content="This is an applications for HY Staffing."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
